@@ -9,7 +9,7 @@ var txt = "";
 var pX = 0;
 var pY = 0;
 
-document.onmousemove = mouseMove;
+document.onMouseMove = mouseMove;
 
 if (b == "Netscape") {
     document.captureEvents(Event.MOUSEMOVE)
@@ -33,7 +33,7 @@ function mouseMove(evn) {
     }
 }
 
-function PopTip() {
+function popTip() {
     if (b == "Netscape") {
         theLayer = eval('document.layers[\'ToolTip\']');
 
@@ -64,9 +64,8 @@ function PopTip() {
     }
 }
 
-function HideTip() {
+function hideTip() {
     args = HideTip.arguments;
-
     if (b == "Netscape") {
         document.layers['ToolTip'].visibility = 'hide';
     } else {
@@ -74,7 +73,7 @@ function HideTip() {
     }
 }
 
-function HideMenu1() {
+function hideMenu1() {
     if (b == "Netscape") {
         document.layers['menu1'].visibility = 'hide';
     } else {
@@ -82,7 +81,7 @@ function HideMenu1() {
     }
 }
 
-function ShowMenu1() {
+function showMenu1() {
     if (b == "Netscape") {
         theLayer = eval('document.layers[\'menu1\']'); theLayer.visibility = 'show';
     } else {
@@ -90,7 +89,7 @@ function ShowMenu1() {
     }
 }
 
-function HideMenu2() {
+function hideMenu2() {
     if (b == "Netscape") {
         document.layers['menu2'].visibility = 'hide';
     } else {
@@ -98,7 +97,7 @@ function HideMenu2() {
     }
 }
 
-function ShowMenu2() {
+function showMenu2() {
     if (b == "Netscape") {
         theLayer = eval('document.layers[\'menu2\']'); theLayer.visibility = 'show';
     } else {
