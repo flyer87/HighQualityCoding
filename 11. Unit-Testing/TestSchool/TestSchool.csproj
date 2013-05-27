@@ -3,11 +3,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{545BEDD7-D2E8-4BBC-9004-AD5B46275EFD}</ProjectGuid>
+    <ProjectGuid>{92E018EA-3F91-41B3-B2F5-A6C0F0172F5F}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Poker.Tests</RootNamespace>
-    <AssemblyName>Poker.Tests</AssemblyName>
+    <RootNamespace>TestSchool</RootNamespace>
+    <AssemblyName>TestSchool</AssemblyName>
     <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{3AC096D0-A1C2-E12C-1390-A8335801FDAB};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -50,17 +50,14 @@
     </Otherwise>
   </Choose>
   <ItemGroup>
-    <Compile Include="CardToStringTest.cs" />
+    <Compile Include="TestStudent.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="IsValidHandTests.cs" />
-    <Compile Include="HandToStringTests.cs" />
-    <Compile Include="IsFlushTests.cs" />
-    <Compile Include="IsFourOfAKindTests.cs" />
+    <Compile Include="TestCourse.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Poker.csproj">
-      <Project>{28fe6ba3-4622-406e-81c4-419b0d2368f9}</Project>
-      <Name>Poker</Name>
+    <ProjectReference Include="..\01. TestClasses\School.csproj">
+      <Project>{9b6e6214-04dc-4ff4-b776-b01bae07805a}</Project>
+      <Name>School</Name>
     </ProjectReference>
   </ItemGroup>
   <Choose>

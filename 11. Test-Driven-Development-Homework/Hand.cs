@@ -1,5 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Text;
 
 namespace Poker
 {
@@ -14,7 +15,18 @@ namespace Poker
 
         public override string ToString()
         {
-            throw new NotImplementedException();
+            if (this.Cards.Count == 0)
+            {
+                return String.Empty;
+            }
+
+            StringBuilder sb = new StringBuilder();
+            foreach (ICard card in Cards)
+            {
+                sb.AppendFormat("{0} ", card.ToString());
+            }
+
+            return sb.ToString().Trim();
         }
     }
 }
